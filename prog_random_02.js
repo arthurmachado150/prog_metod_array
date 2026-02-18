@@ -9,13 +9,17 @@ function gerarNum(min, max){
 }
 
 function principal(){
-    let num = [], min = 1, max = 10, val = 0
+    let num = [], min = 1, max = 10, val = 0, soma = 0
 
     for(let i = 0; i < 5; i++){
         val = gerarNum(min, max)
         num.push(val)
     }
     console.log(num)
+    for(let i =0; i < num.length; i++){
+        soma += num[i]
+    }
+    console.log(`A soma dos valores do array é: ${soma}`)
 }
 
 principal()
